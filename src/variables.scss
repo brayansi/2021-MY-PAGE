@@ -1,0 +1,20 @@
+/* variables.scss */
+@import '~@angular/material/theming';
+
+$curriculum-primary: mat.define-palette(mat.$pink-palette);
+$curriculum-accent: mat.define-palette(mat.$indigo-palette, A200, A100, A400);
+$curriculum-warn: mat.define-palette(mat.$red-palette);
+
+$curriculum-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $curriculum-primary,
+      accent: $curriculum-accent,
+      warn: $curriculum-warn,
+    ),
+  )
+);
+
+$custom-typography: mat.define-typography-config(
+  $font-family: 'Roboto',
+);

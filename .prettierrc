@@ -1,0 +1,22 @@
+{
+  "extends": ["plugin:@angular-eslint/template/recommended"],
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "useTabs": false,
+  "printWidth": 200,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "parser": "html"
+      }
+    },
+    {
+      "files": "*.component.html",
+      "options": {
+        "parser": "angular"
+      }
+    }
+  ]
+}

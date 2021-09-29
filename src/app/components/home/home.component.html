@@ -1,0 +1,34 @@
+<div class="home">
+  <mat-toolbar class="toolbar" color="primary">
+    <mat-toolbar-row fxLayout="row" fxLayoutAlign="end center">
+      <button class="item" mat-button color="primary">HOME</button>
+      <button class="item" mat-button color="primary">SOBRE MIN</button>
+      <button class="item" mat-button color="primary">EDUCAÇÃO</button>
+      <button class="item" mat-button color="primary">HABILIDADES</button>
+      <button class="item" mat-button color="primary">EXPERIENCIA</button>
+      <button class="item" mat-button color="primary">PORTFÓLIO</button>
+      <button class="item" mat-button color="primary">SOCIAL</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="background" fxLayout="column" fxLayoutAlign="center center">
+    <div class="container" fxLayout="column" fxLayout.gt-xs="row wrap" fxLayout.gt-md="row wrap">
+      <div class="image" fxLayout="column" fxLayoutAlign="center center" fxFlex="100%" fxFlex.gt-xs="0 1 50%">
+        <img src="./../../../assets/images/signature.png" alt="signature" />
+      </div>
+      <div fxLayout="column" fxLayoutAlign="center center" fxFlex="100%" fxFlex.gt-xs="0 1 50%">
+        <div fxLayout="column" fxLayoutAlign="center start">
+          <span class="presentation">Hi, I'm</span>
+          <h1 class="title">BRAYAN SANTOS</h1>
+          <h2 class="subtitle my-primary-text">FRONTEND DEVELOPER</h2>
+        </div>
+        <button mat-raised-button color="primary">
+          <mat-icon aria-hidden="false">download</mat-icon>
+          Baixar Curriculum
+        </button>
+      </div>
+    </div>
+    <button mat-icon-button color="primary" class="expand_more">
+      <mat-icon aria-hidden="false">expand_more</mat-icon>
+    </button>
+  </div>
+</div>
