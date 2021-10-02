@@ -25,7 +25,9 @@
 }
 
 .image {
-  display: none !important;
+  img {
+    width: 100%;
+  }
 }
 
 .presentation {
@@ -46,6 +48,7 @@
   margin: 50px;
   height: 80px;
   width: 80px;
+
   mat-icon {
     font-size: 50px;
     height: auto;
@@ -53,12 +56,26 @@
   }
 }
 
+@media (min-width: 425px) {
+  .presentation {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .subtitle {
+    font-size: 34px;
+  }
+}
+
 @media (min-width: 600px) {
   .image {
-    display: flex !important;
-
     img {
-      width: 100%;
+      width: 75%;
     }
   }
 
@@ -74,17 +91,20 @@
 }
 
 @media (min-width: 960px) {
-  .presentation {
-    font-size: 34px;
-    margin-bottom: 16px;
+  .toolbar {
+    .item {
+      font-size: 14px;
+    }
   }
 
-  .title {
-    font-size: 48px;
-    font-weight: bold;
+  .image {
+    img {
+      width: 100%;
+    }
   }
 
-  .subtitle {
-    font-size: 34px;
+  .expand_more {
+    position: absolute;
+    bottom: 0px;
   }
 }
