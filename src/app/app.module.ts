@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDividerModule } from '@angular/material/Divider';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -36,6 +37,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatDividerModule,
 
     FlexLayoutModule,
 

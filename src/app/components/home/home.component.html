@@ -21,13 +21,13 @@
           <h1 class="title">BRAYAN SANTOS</h1>
           <h2 class="subtitle my-primary-text">FRONTEND DEVELOPER</h2>
         </div>
-        <button mat-raised-button color="primary">
+        <button mat-raised-button color="primary" [@headShake]="downloadResumeState" (@headShake.done)="animDone('downloadResume')">
           <mat-icon aria-hidden="false">download</mat-icon>
           Baixar Curriculum
         </button>
       </div>
     </div>
-    <button mat-icon-button color="primary" class="expand_more">
+    <button mat-icon-button color="primary" class="expand_more" [@flash]="expandMoreState" (@flash.done)="animDone('expandMore')">
       <mat-icon aria-hidden="false">expand_more</mat-icon>
     </button>
   </div>
