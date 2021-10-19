@@ -11,12 +11,12 @@
 @include mat.core();
 
 // Emit theme-dependent styles for common features used across multiple components.
-@include mat.core-theme($curriculum-theme);
+@include mat.core-theme($theme);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($curriculum-theme);
+@include mat.all-component-themes($theme);
 
 // Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
 @include mat.typography-hierarchy($custom-typography);
@@ -40,10 +40,18 @@ body {
   overflow: hidden !important;
 }
 
-.my-primary-text {
-  color: mat-color($curriculum-primary);
+.my-primary-color {
+  color: mat-color($primary);
 }
 
-.my-accent-text {
-  color: mat-color($curriculum-accent);
+.my-accent-color {
+  color: mat-color($accent);
+}
+
+.my-primary-background {
+  background-color: mat-color($primary);
+}
+
+.my-accent-background {
+  background-color: mat-color($accent);
 }
