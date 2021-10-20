@@ -1,4 +1,21 @@
 .skill {
-  height: 100vh;
+  // height: 100vh;
   width: 100%;
+  color: white;
+  padding: 36px;
+}
+
+.item {
+  padding: 16px;
+  width: 100%;
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .skill {
+    height: 100vh;
+  }
 }

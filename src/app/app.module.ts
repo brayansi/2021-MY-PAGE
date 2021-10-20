@@ -22,6 +22,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { SocialComponent } from './components/social/social.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, AboutMeComponent, EducationComponent, SkillComponent, ExperienceComponent, SocialComponent, PortfolioComponent],
@@ -38,6 +39,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
+    MatProgressBarModule,
 
     FlexLayoutModule,
 
